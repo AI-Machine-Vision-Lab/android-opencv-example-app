@@ -1,29 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--<org.opencv.android.JavaCameraView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:id="@+id/activity_surface_view" />-->
-
-    <ImageView
+    <org.opencv.android.JavaCameraView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/imageViewInput"
-        />
+        android:layout_height="match_parent"
+        android:id="@+id/activity_surface_view" />
 
-    <ImageView
-        android:id="@+id/imageViewOutput"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-    />
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
