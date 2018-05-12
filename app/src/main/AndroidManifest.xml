@@ -8,6 +8,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.front.autofocus"  android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <supports-screens android:resizeable="true"
         android:smallScreens="true"
@@ -24,8 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"
-            android:screenOrientation="landscape"
-            android:configChanges="keyboardHidden|orientation">
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
